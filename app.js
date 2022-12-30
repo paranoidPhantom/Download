@@ -2,30 +2,6 @@
 // Дабавлять индексы к версии не нужно, работать не будет
 // Версия выше в списке = Версия выше на странице
 const Links = {
-    "57": {
-        "Yandex": ["https://disk.yandex.ru/d/QA3BsONIYB9zpA"],
-        "Google": ["https://drive.google.com/drive/folders/1SzmsjoRUO-3OZRKzjCYUJD6jA8uDr1Ac?usp=share_link"],
-        "Torrent": ["magnet:?xt=urn:btih:6DDI52KXJKJ5APN2VO4FCSWPWL72RTFF&dn=Stalker_UE5&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce"],
-        "Mega": ["https://mega.nz/folder/v74n3QDC#tXX0sFWrtTYccxkFh6gM0w/folder/S3xnSZaD"]
-    },
-    "56": {
-        "Yandex": ["https://disk.yandex.ru/d/QA3BsONIYB9zpA"],
-        "Google": ["https://drive.google.com/drive/folders/1SzmsjoRUO-3OZRKzjCYUJD6jA8uDr1Ac?usp=share_link"],
-        "Torrent": ["magnet:?xt=urn:btih:6DDI52KXJKJ5APN2VO4FCSWPWL72RTFF&dn=Stalker_UE5&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce"],
-        "Mega": ["https://mega.nz/folder/v74n3QDC#tXX0sFWrtTYccxkFh6gM0w/folder/S3xnSZaD"]
-    },
-    "55": {
-        "Yandex": ["https://disk.yandex.ru/d/QA3BsONIYB9zpA"],
-        "Google": ["https://drive.google.com/drive/folders/1SzmsjoRUO-3OZRKzjCYUJD6jA8uDr1Ac?usp=share_link"],
-        "Torrent": ["magnet:?xt=urn:btih:6DDI52KXJKJ5APN2VO4FCSWPWL72RTFF&dn=Stalker_UE5&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce"],
-        "Mega": ["https://mega.nz/folder/v74n3QDC#tXX0sFWrtTYccxkFh6gM0w/folder/S3xnSZaD"]
-    },
-    "54": {
-        "Yandex": ["https://disk.yandex.ru/d/QA3BsONIYB9zpA"],
-        "Google": ["https://drive.google.com/drive/folders/1SzmsjoRUO-3OZRKzjCYUJD6jA8uDr1Ac?usp=share_link"],
-        "Torrent": ["magnet:?xt=urn:btih:6DDI52KXJKJ5APN2VO4FCSWPWL72RTFF&dn=Stalker_UE5&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce"],
-        "Mega": ["https://mega.nz/folder/v74n3QDC#tXX0sFWrtTYccxkFh6gM0w/folder/S3xnSZaD"]
-    },
     "53": {
         "Yandex": ["https://disk.yandex.ru/d/QA3BsONIYB9zpA"],
         "Google": ["https://drive.google.com/drive/folders/1SzmsjoRUO-3OZRKzjCYUJD6jA8uDr1Ac?usp=share_link"],
