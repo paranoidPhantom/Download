@@ -13,6 +13,7 @@ body {
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
+    min-height: 100% !important;
 }
 
 main {
@@ -20,7 +21,7 @@ main {
     margin-right: 0;
     gap: 1em;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 header {
