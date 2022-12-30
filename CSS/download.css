@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(34, 34, 34);
+    margin: 0;
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,1)), url(/Media/Hero2.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+main {
+    margin: 3em;
+    margin-right: 0;
+    gap: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+header {
+    width: 100%;
+    padding: 1em 3em;
+    border-bottom: 0.1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.147);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1,h2,h3 {
+    font-family: 'Arial';
+    color: white;
+}
+
+.section {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin-bottom: 2em;
+}
+
+.badge {
+    width: 6.4em;
+    height: 6.4em;
+    border-radius: 20%;
+    display: inline-block;
+    top: 0;
+    transition: all 0.2s ease;
+    box-shadow: 8px 10px 12px 3px rgba(0, 0, 0, 0.43);
+}
+
+.rounded {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    margin: 15px 16px auto;
+    z-index: 10;
+    border-radius: 30%;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded > img {
+    width: 60%;
+    height: 60%;
+}
+
+.multi-button {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 1em;
+    gap: 1em;
+}
+
+button {
+    font-family: "Arial";
+    font-size: 2em;
+    color: #fff;
+    background-color: hsl(50, 70%, 50%);
+    border-radius: 0.4em;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translate(0,-10%);
+}
+
+h1.newest-version {
+    padding: 0.4em;
+    background: rgba(0, 255, 247, 0.3);
+    border-top-left-radius: 0.5em;
+}
+
+div.newest-version {
+    padding: 2em;
+    background: rgba(0, 255, 247, 0.3);
+    border-bottom-left-radius: 0.5em;
+    transform: translate(0,-2.35em);
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background: rgb(12, 13, 17);
+    }
+    h1,h2,h3 {
+        text-align: center;
+    }
+    main {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+    .newest-version > span {
+        display: none;
+    }
+    h1.newest-version, div.newest-version {
+        border-radius: 0;
+    }
+    .section {
+        justify-content: center;
+        padding: 2em;
+    }
+    header {
+        justify-content: center;
+    }
+    header > h1 {
+        display: none;
+    }
+}
