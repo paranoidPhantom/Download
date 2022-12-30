@@ -21,7 +21,7 @@ main {
     margin-right: 0;
     gap: 1em;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 header {
