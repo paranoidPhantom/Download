@@ -38,6 +38,7 @@ h1,h2,h3 {
     font-family: 'Arial';
     color: white;
     backdrop-filter: blur(0.1em);
+    user-select: none;
 }
 
 .section {
@@ -94,6 +95,7 @@ h1,h2,h3 {
 .rounded > img {
     width: 60%;
     height: 60%;
+    user-select: none;
 }
 
 .multi-button {
