@@ -79,7 +79,7 @@ for (let Index = 0; Index < Keys.length; Index++) {
     if (Index == Keys.length - 1) {
         h1.setAttribute("class", "newest-version")
         section.setAttribute("class","section newest-version")
-        h1.innerHTML = "Ссылки на скчивание билда " + Version + "<span style='font-size: 0.6em; margin-left: 0.4em'> - </span><span style='font-size: 0.6em; margin-left: 0.4em'>актуальная версия</span>"
+        h1.innerHTML = "Ссылки на скчивание билда " + Version + "<span style='font-size: 0.6em; margin-left: 0.4em'> - </span><span style='font-size: 0.6em; margin-left: 0.4em'>актуальный</span>"
     }
 
     // Cycle through each link type
