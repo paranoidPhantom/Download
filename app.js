@@ -5,7 +5,7 @@ const Links = {
     "53": {
         "Direct": ["https://неделя-русского.рф/Stalker_UE5.zip"],
         "Yandex": ["https://disk.yandex.ru/d/QA3BsONIYB9zpA"],
-        "Google": ["https://drive.google.com/drive/folders/1SzmsjoRUO-3OZRKzjCYUJD6jA8uDr1Ac?usp=share_link"],
+        "Google": ["https://drive.google.com/file/d/1GvEQvVRhNCHpOyYRY2lEGzLzpQGCbBzy/view?usp=share_link"],
         "Torrent": ["magnet:?xt=urn:btih:6DDI52KXJKJ5APN2VO4FCSWPWL72RTFF&dn=Stalker_UE5&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce"],
         "Mega": ["https://mega.nz/folder/v74n3QDC#tXX0sFWrtTYccxkFh6gM0w/folder/S3xnSZaD"]
     }
