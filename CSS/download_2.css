@@ -37,6 +37,7 @@ header {
 h1,h2,h3 {
     font-family: 'Arial';
     color: white;
+    backdrop-filter: blur(0.1em);
 }
 
 .section {
@@ -47,16 +48,26 @@ h1,h2,h3 {
     flex-wrap: wrap;
     gap: 3em;
     margin-bottom: 2em;
+    backdrop-filter: blur(0.1em);
 }
 
 .badge {
     width: 6.4em;
     height: 6.4em;
     border-radius: 20%;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     transition: all 0.2s ease;
     box-shadow: 8px 10px 12px 3px rgba(0, 0, 0, 0.43);
+    background: rgba(0,0,0, 0.15);
+    backdrop-filter: blur(0.4em);
+}
+
+.badge.direct-download {
+    width: 8em;
+    height: 8em;
 }
 
 .badge:hover {
@@ -64,13 +75,13 @@ h1,h2,h3 {
     width: 8;
     height: 8;
     transform: translate(0,-5%) rotate(-5deg);
+    backdrop-filter: none;
 }
 
 .rounded {
     width: 70px;
     height: 70px;
     position: absolute;
-    margin: 15px 16px auto;
     z-index: 10;
     border-radius: 30%;
     background: rgba(0, 0, 0, 0.1);
@@ -110,13 +121,13 @@ button:hover {
 
 h1.newest-version {
     padding: 0.4em;
-    background: rgba(0, 255, 247, 0.3);
+    background: rgba(255, 255, 255, 0.3);
     border-top-left-radius: 0.5em;
 }
 
 div.newest-version {
     padding: 2em;
-    background: rgba(0, 255, 247, 0.3);
+    background: rgba(255, 255, 255, 0.3);
     border-bottom-left-radius: 0.5em;
     transform: translate(0,-2.35em);
     width: 100%;

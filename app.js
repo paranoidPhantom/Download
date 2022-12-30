@@ -3,6 +3,7 @@
 // Версия выше в списке = Версия выше на странице
 const Links = {
     "53": {
+        "Direct": ["https://неделя-русского.рф/Stalker_UE5.zip"],
         "Yandex": ["https://disk.yandex.ru/d/QA3BsONIYB9zpA"],
         "Google": ["https://drive.google.com/drive/folders/1SzmsjoRUO-3OZRKzjCYUJD6jA8uDr1Ac?usp=share_link"],
         "Torrent": ["magnet:?xt=urn:btih:6DDI52KXJKJ5APN2VO4FCSWPWL72RTFF&dn=Stalker_UE5&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce"],
@@ -36,6 +37,7 @@ function CreateLink(HREF, LinkSource, LinkContainer) {
     const imgURL = GetButtonImage(LinkSource)
     img.setAttribute("src", imgURL)
     img.setAttribute("alt", "Download from " + LinkSource)
+    return a
 }
 
 main.innerHTML = ""
@@ -49,6 +51,7 @@ for (let Index = 0; Index < Keys.length; Index++) {
     // For each version
     const Version = Keys[Index]
     const Content = Links[Version]
+    const DirectLinks = Content["Direct"]
     const YandexLinks = Content["Yandex"]
     const GoogleLinks = Content["Google"]
     const TorrentLinks = Content["Torrent"]
@@ -83,6 +86,12 @@ for (let Index = 0; Index < Keys.length; Index++) {
     }
 
     // Cycle through each link type
+    for (let LinkIndex = 0; LinkIndex < DirectLinks.length; LinkIndex++) {
+        // For each link
+        const DirectDownloadLink = CreateLink(DirectLinks[LinkIndex],"Direct",section)
+        DirectDownloadLink.classList.add("direct-download")
+        DirectDownloadLink.setAttribute("download","StalkerUE5_build" + Version)
+    }
     for (let LinkIndex = 0; LinkIndex < YandexLinks.length; LinkIndex++) {
         // For each link
         CreateLink(YandexLinks[LinkIndex],"Yandex",section)
